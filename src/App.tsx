@@ -6,7 +6,7 @@ import { Login } from './pages/login/Login';
 import Products from './pages/products/Products';
 import Users from './pages/users/Users';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-
+import './styles/global.scss';
 function App() {
     const Layout = () => {
         return (

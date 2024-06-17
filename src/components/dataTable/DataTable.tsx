@@ -24,6 +24,7 @@ export const DataTable = (props: Props) => {
     // });
     const handleDelete = (id: number) => {
         // mutation.mutate(id);
+        console.log(id);
     };
 
     const actionColumn: GridColDef = {

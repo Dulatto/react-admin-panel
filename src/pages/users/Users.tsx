@@ -4,7 +4,6 @@ import './users.scss';
 import { userRows } from '../../data';
 import { useState } from 'react';
 import { Add } from '../../components/add/Add';
-import { useQuery } from '@tanstack/react-query';
 
 const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', width: 90 },
@@ -53,15 +52,15 @@ const columns: GridColDef[] = [
         width: 150,
         type: 'boolean',
     },
-    {
-        field: 'fullName',
-        headerName: 'Full name',
-        description: 'This column has a value getter and is not sortable.',
-        sortable: false,
-        width: 160,
-        valueGetter: (value, row) =>
-            `${row.firstName || ''} ${row.lastName || ''}`,
-    },
+    // {
+    //     field: 'fullName',
+    //     headerName: 'Full name',
+    //     description: 'This column has a value getter and is not sortable.',
+    //     sortable: false,
+    //     width: 160,
+    //     valueGetter: (value, row) =>
+    //         `${row.firstName || ''} ${row.lastName || ''}`,
+    // },
 ];
 
 const Users = () => {
